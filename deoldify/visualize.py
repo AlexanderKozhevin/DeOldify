@@ -179,8 +179,8 @@ class ModelImageVisualizer:
             orig_image, orig_image, render_factor=render_factor,post_process=post_process
         )
 
-        if watermarked:
-            return get_watermarked(filtered_image)
+        #if watermarked:
+        #    return get_watermarked(filtered_image)
 
         return filtered_image
 
