@@ -61,7 +61,7 @@ class ModelImageVisualizer:
     def _open_pil_image(self, path: Path) -> Image:
         return PIL.Image.open(path).convert('RGB')
     
-     def save_image(self, path:str, figsize:(int,int)=(20,20), render_factor:int=None)->Image:
+    def save_image(self, path:str, figsize:(int,int)=(20,20), render_factor:int=None)->Image:
         path = Path(path)
         result = self.get_transformed_image(path, render_factor)
 
